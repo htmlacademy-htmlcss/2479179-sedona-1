@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Alina Valendo](https://up.htmlacademy.ru/htmlcss-individual/1/user/2479179).
-* Наставник: `Неизвестно`.
+* Наставник: [Наталья Зотова](https://htmlacademy.ru/profile/id1079951)
 
 ---
 
