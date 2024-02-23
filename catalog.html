@@ -5,37 +5,38 @@
     <meta charset="utf-8">
     <title>Каталог</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body class="page__body">
     <header class="main-header">
       <nav class="main-nav">
         <a class="logo" href="#">
-          <img src="images/header/logo-sedona.png" width="140" height="70" alt="Логотип Седоны">
-        </a>
-        <ul class="site-navigation">
-          <li class="site-navigation-item"> <a href="./index.html">Главная</a></li>
-          <li class="site-navigation-item"><a href="#">О седоне</a></li>
-          <li class="site-navigation-item"><a class="navigation-link-current" href="./catalog.html">Гостиницы</a></li>
-        </ul>
-        <div class="site-buttons">
-          <a href="#"><span class="visually-hidden">Поиск</span></a>
-          <a href="#"><span class="visually-hidden">Избранное</span><span class="count-likes">12</span></a>
-          <a href="#">Хочу сюда!</a>
-        </div>
+          <img  src="../images/header/logo-sedona.png" width="140" height="70" alt="Логотип Седоны">
+           </a>
+           <ul class="site-navigation">
+          <li class="site-navigation-item"><a class="navigation__link" href="./index.html">Главная</a></li>
+          <li class="site-navigation-item"><a class="navigation__link" href="#">О седоне</a></li>
+          <li class="site-navigation-item"><a class="navigation__link link__current" href="./catalog.html">Гостиницы</a></li>
+           </ul>
+           <div class="site-buttons">
+          <a class="navigation__link" href="#"><span class="visually-hidden">Поиск</span></a>
+          <a class="navigation__link nav__likes" href="#"><span class="visually-hidden">Избранное</span><span class="count-likes">12</span></a>
+          <a class="navigation__link-button" href="#">Хочу сюда!</a>
+           </div>
       </nav>
     </header>
 
     <main class="main__inner">
-      <header class="inner header">
+      <header class="inner__header">
         <h1 class="inner__header__title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs__item">
-            <a href="./index.html">
+            <a href="./index.html" class="home">
               <span class="visually-hidden">Главная</span>
             </a>
           </li>
-          <li class="breadcrumbs__item"><a class="navigation-link-current" href="./catalog.html">Гостиницы</a></li>
+          <li class="breadcrumbs__item"><a href="./catalog.html" class="breadcrumbs__link">Гостиницы</a></li>
         </ul>
         <form class="filter" action="https://echo.htmlacademy.ru/" method="get">
 
@@ -101,7 +102,7 @@
           </fieldset>
 
           <div class="filter__actions">
-            <button class="button" type="submit">Применить</button>
+            <button class="button__positive" type="submit">Применить</button>
             <button class="button" type="reset">Сбросить</button>
           </div>
         </form>
@@ -109,7 +110,7 @@
 
       <section class="sorting">
         <div>
-          <h2>Найдено гостиниц:<span class="count-result">38</span></h2>
+          <h class="search__result">Найдено гостиниц:<span class="count-result">38</span></h2>
 
           <select class="select-control" aria-label="Сортировка">
             <option value="popular">Сначала популярное</option>
