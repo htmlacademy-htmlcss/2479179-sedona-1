@@ -12,22 +12,31 @@
 
     <header class="main__header container">
       <nav class="main__nav">
-        <a class="logo current">
+        <a class="logo" href="#">
           <img src="./images/header/logo-sedona.svg" width="140" height="70" alt="Логотип Седоны">
         </a>
         <ul class="site__navigation">
-          <li class="site__navigation-item"> <a class="navigation__link navigation__link-current current">Главная</a>
+          <li class="site__navigation-item"> <a class="navigation__link navigation__link-current" href="#">Главная</a>
           </li>
           <li class="site__navigation-item"><a class="navigation__link" href="#">О седоне</a></li>
           <li class="site__navigation-item"><a class="navigation__link" href="./catalog.html">Гостиницы</a></li>
         </ul>
 
-        <div class="site__buttons">
-          <a class="navigation__link nav__search" href="#"><span class="visually__hidden">Поиск</span></a>
-          <a class="navigation__link nav__likes" href="#"><span class="visually__hidden">Избранное</span><span
-              class="count__likes">12</span></a>
-        </div>
-        <a class="nav__button" href="./modal.html">Хочу сюда!</a>
+        <ul class="site__buttons">
+
+          <li class="navigation__link nav__search"><a href="#"><span class="visually__hidden">Поиск</span>
+          </a>
+        </li>
+
+          <li class="navigation__link nav__likes"><a href="#"><span class="visually__hidden">Избранное</span>
+            <span class="count__likes">12</span>
+            </a>
+        </li>
+      </ul>
+
+
+            <a class="nav__button">Хочу сюда!</a>
+
       </nav>
     </header>
 
@@ -110,7 +119,7 @@
         <h3 class="booking__title">Заинтересовались?</h3>
         <p class="search__title">Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в
           Седоне</p>
-        <a class="search__link" href="./modal.html">Поиск гостиницы в Седоне</a>
+        <a class="search__link" href="#">Поиск гостиницы в Седоне</a>
       </section>
 
       <section class="subscribe">
@@ -212,9 +221,9 @@
       </section>
     </footer>
 
-    <div class="modal__container hidden">
+    <div class="modal__container">
 
-      <div class="modal">
+      <div class="modal modal-search">
         <button class="modal__close-button" type="button">
           <span class="visually__hidden">Закрыть</span>
         </button>
