@@ -6,6 +6,8 @@
     <title>HTML Academy: Седона</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png">
   </head>
 
   <body class="page__body">
@@ -228,41 +230,32 @@
       </section>
     </footer>
 
-    <div class="modal__container hidden">
+    <div class="modal__container">
 
       <div class="modal">
         <button class="modal__close-button" type="button">
           <span class="visually__hidden">Закрыть</span>
         </button>
-
-
         <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
 
         <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="field-group">
-            <label class="label__check-inn">Дата заезда:</label>
+            <label for="check__inn" class="label__check-inn">Дата заезда:</label>
             <input class="modal-form-field" type="text" id="check__inn" name="check__inn" autocomplete="off"
-              value="27 апреля 2020">
+              value="27 апреля 2020" required placeholder="Дата заезда">
             <p class="info__check-inn">Мы не можем отправить вас в прошлое.</p>
           </div>
 
-
           <div class="field-group">
-            <label class="label__check-out">Дата выезда:</label>
-            <input class="modal-form-field" type="text" id="check__inn" name="check__inn" autocomplete="off"
-              value="1 сентября 2023">
+            <label for="check__out" class="label__check-out">Дата выезда:</label>
+            <input class="modal-form-field" type="text" id="check__out" name="check__out" autocomplete="off"
+              value="1 сентября 2023" required placeholder="Дата выезда">
             <p class="info__check-out">На эти даты есть свободные номера. Пока есть.</p>
           </div>
 
-
-
-
           <div class="persons">
-
             <label for="input-control-adults" class="modal-label label-control-adults">Взрослые:</label>
-
             <div class="input-control-wrapper">
-
               <button class="button-counter button-adults-minus" type="button">
                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                   aria-label="Уменьшить количество" width="20" height="20" fill="#756157" viewBox="0 0 20 20">
@@ -270,9 +263,8 @@
                 </svg>
               </button>
 
-              <input type="number" class="input-control input-control-adults" name="input-control-adults"
+              <input type="text" class="input-control input-control-adults" name="input-control-adults"
                 id="input-control-adults" value="2" required>
-
               <button class="button-counter button-adults-pluse" type="button">
                 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
                   aria-label="Увеличить количество" width="20" height="20" fill="#756157" viewBox="0 0 20 20">
@@ -302,7 +294,7 @@
               <button class="button-counter button-child-minus" type="button">
                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                   aria-label="Уменьшить количество" width="20" height="20" fill="none" viewBox="0 0 20 20">
-                  <path fill="#756157" fill-opacity=".3" d=" M3 9v2h14V9H3Z" />
+                  <path fill="#756157" fill-opacity=".3" d="M3 9v2h14V9H3Z" />
                 </svg>
               </button>
               <input type="text" class="input-control input-control-child" name="input-control-child"
@@ -314,108 +306,11 @@
                 </svg>
               </button>
             </div>
-
           </div>
+          <button class="button__modal" type="submit">Найти</button>
         </form>
-        <button class="button__modal" type="submit">Найти</button>
       </div>
     </div>
   </body>
-
-</html>
-
-
-<div class="modal__container">
-
-  <div class="modal modal__search">
-    <button class="modal__close-button" type="button">
-      <span class="visually__hidden">Закрыть</span>
-    </button>
-
-
-    <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-
-    <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
-      <div class="field-group">
-        <label class="label__check-inn">Дата заезда:</label>
-        <input class="modal-form-field" type="text" id="check__inn" name="check__inn" autocomplete="off"
-          value="27 апреля 2020">
-        <p class="info__check-inn">Мы не можем отправить вас в прошлое.</p>
-      </div>
-
-
-      <div class="field-group">
-        <label class="label__check-out">Дата выезда:</label>
-        <input class="modal-form-field" type="text" id="check-out" name="check-out" autocomplete="off"
-          value="1 сентября 2023">
-        <p class="info__check-out">На эти даты есть свободные номера. Пока есть.</p>
-      </div>
-
-
-
-
-      <div class="persons">
-
-        <label for="input-control-adults" class="modal-label label-control-adults">Взрослые:</label>
-
-        <div class="input-control-wrapper">
-
-          <button class="button-counter button-adults-minus" type="button">
-            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
-              aria-label="Уменьшить количество" width="20" height="20" fill="#756157" viewBox="0 0 20 20">
-              <path fill="#756157" fill-opacity=".3" d="M3 9v2h14V9H3Z" />
-            </svg>
-          </button>
-
-          <input type="number" class="input-control input-control-adults" name="input-control-adults"
-            id="input-control-adults" value="2" required>
-
-          <button class="button-counter button-adults-pluse" type="button">
-            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
-              aria-label="Увеличить количество" width="20" height="20" fill="#756157" viewBox="0 0 20 20">
-              <path fill="#756157" fill-opacity=".3" d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" />
-            </svg>
-          </button>
-        </div>
-
-        <span class="modal-label">
-          <label for="input-control-child" class="modal-label label-control-child">Дети:</label>
-          <span class="tooltip">
-            <button class="tooltip-info" type="button" aria-labelledby="tooltip-label-date">
-              <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-label="Показать"
-                width="26" height="26" fill="none" viewBox="0 0 26 26">
-                <circle cx="13" cy="13" r="13" fill="#83B3D3" />
-                <path fill="#fff" fill-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" clip-rule="evenodd" />
-              </svg>
-            </button>
-
-            <span class="tooltip__text" role="tooltip" id="tooltip-label-date">
-              Укажите количество детей, которые будут с вами, возраст которых от 6 до 18
-              лет. Дети до 6 лет размещаются бесплатно.
-            </span>
-          </span>
-        </span>
-        <div class="input-control-wrapper">
-          <button class="button-counter button-child-minus" type="button">
-            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
-              aria-label="Уменьшить количество" width="20" height="20" fill="none" viewBox="0 0 20 20">
-              <path fill="#756157" fill-opacity=".3" d=" M3 9v2h14V9H3Z" />
-            </svg>
-          </button>
-          <input type="text" class="input-control input-control-child" name="input-control-child"
-            id="input-control-child" value="2" required>
-          <button class="button-counter button-child-pluse" type="button">
-            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
-              aria-label="Увеличить количество" width="20" height="20" fill="none" viewBox="0 0 20 20">
-              <path fill="#756157" fill-opacity=".3" d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" />
-            </svg>
-          </button>
-        </div>
-      </div>
-      <button class="button__modal" type="submit">Найти</button>
-    </form>
-  </div>
-</div>
-</body>
 
 </html>
