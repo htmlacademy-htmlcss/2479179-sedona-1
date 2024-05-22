@@ -6,7 +6,7 @@
 */
 
 @font-face {
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/ptsans-400.woff2") format("woff2");
@@ -14,7 +14,7 @@
 }
 
 @font-face {
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/ptsans-700.woff2") format("woff2");
@@ -222,7 +222,7 @@ html {
   padding-top: 51px;
   padding-bottom: 82px;
   background-color: #769ec2;
-  background-image: url(../images/divider.svg), url(../images/main-page/slogan/welcome-background.jpg);
+  background-image: url("../images/divider.svg"), url("../images/main-page/slogan/welcome-background.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: bottom 0 center, center center;
   -ms-flex-wrap: wrap;
@@ -397,7 +397,7 @@ html {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  background-image: url(../images/main-page/advantages/food.svg);
+  background-image: url("../images/main-page/advantages/food.svg");
   background-repeat: no-repeat;
   background-position: center 80px;
   flex-basis: calc(100%/3);
@@ -405,7 +405,7 @@ html {
 
 .benefits__item:first-child {
   background-color: rgba(131, 179, 211, 0.12);
-  background-image: url(../images/main-page/advantages/house.svg);
+  background-image: url("../images/main-page/advantages/house.svg");
   background-repeat: no-repeat;
   background-position: center 80px;
   flex-basis: calc(100%/3);
@@ -413,7 +413,7 @@ html {
 
 .benefits__item:last-child {
   background-color: rgba(131, 179, 211, 0.12);
-  background-image: url(../images/main-page/advantages/souvenirs.svg);
+  background-image: url("../images/main-page/advantages/souvenirs.svg");
   background-repeat: no-repeat;
   background-position: center 80px;
   flex-basis: calc(100%/3);
@@ -507,7 +507,7 @@ html {
   font-size: 22px;
   line-height: 26px;
   color: #ffffff;
-  background-image: url(../images/subscription.jpg);
+  background-image: url("../images/subscription.jpg");
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -576,7 +576,7 @@ html {
 }
 
 .subscription__window {
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family:  "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   min-width: 452px;
@@ -594,7 +594,7 @@ html {
 }
 
 .subscription__button {
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family:  "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -804,7 +804,7 @@ html {
 
 
 .main__inner {
-  background-image: url(../images/catalog/catalog-back.jpg);
+  background-image: url("../images/catalog/catalog-back.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 35px 70px 70px 70px;
@@ -847,7 +847,7 @@ html {
 }
 
 .breadcrumbs__item-devider {
-  background-image: url(../images/catalog/bread-devider.svg);
+  background-image: url("../images/catalog/bread-devider.svg");
   background-repeat: no-repeat;
   background-position: center;
   margin-right: 10px;
@@ -973,8 +973,8 @@ html {
 }
 
 
-.filter__checkbox[type=checkbox]:checked + .control__mark {
-  background-image: url(../images/checkbox.svg);
+.filter__checkbox[type="checkbox"]:checked + .control__mark {
+  background-image: url("../images/checkbox.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -991,7 +991,7 @@ html {
 }
 
 .filter__radio:checked + .control__mark-radio {
-  background-image: url(../images/catalog/radio.svg);
+  background-image: url("../images/catalog/radio.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1069,13 +1069,13 @@ html {
 
 .price__row-min:focus-visible,
 .price__row-max:focus-visible {
-  outline: solid 3px #68A2CA;
+  outline: solid 3px #68a2ca;
 }
 
 
 .price__row-min:focus,
 .price__row-max:focus {
-  outline: solid 3px #68A2CA;
+  outline: solid 3px #68a2ca;
 }
 
 
@@ -1125,7 +1125,7 @@ html {
   left: 106px;
   top: 12px;
   line-height: 24px;
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family:  "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
   opacity: 50%;
@@ -1136,7 +1136,7 @@ html {
   right: 20px;
   top: 12px;
   line-height: 24px;
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family:  "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
   opacity: 50%;
@@ -1208,7 +1208,7 @@ html {
 }
 
 .button__submit {
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family:  "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -1239,12 +1239,13 @@ html {
 }
 
 .button__submit:disabled {
-  background: none;
-  opacity: 60%;
+  background-color: #e5e5e5;
+    color: #ffffff;
 }
 
+
 .button__reset {
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family:  "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -1266,7 +1267,7 @@ html {
 }
 
 .button__reset:disabled {
-  opacity: 60%;
+  color: rgba(255, 255, 255, 0.1);
 }
 
 .button__reset:focus-visible,
@@ -1300,10 +1301,10 @@ html {
 }
 
 .select__control {
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: "PT Sans";
   margin-left: 200px;
   padding: 14px 130px 14px 20px;
-  background-image: url(../images/catalog/view-mode/sorting-option.svg);
+  background-image: url("../images/catalog/view-mode/sorting-option.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
   border-radius: 4px;
@@ -1311,7 +1312,6 @@ html {
   border-color: #e5e5e5;
   font-size: 18px;
   line-height: 21px;
-  -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   cursor: pointer;
@@ -1320,7 +1320,7 @@ html {
 
 .select__control:hover,
 .select__control:focus {
-  border: solid 2px #68A2CA;
+  border: solid 2px #68a2ca;
   outline: none;
 }
 
@@ -1371,21 +1371,21 @@ html {
 }
 
 .views__options-cards {
-  background-image: url(../images/catalog/view-mode/table.svg);
+  background-image: url("../images/catalog/view-mode/table.svg");
   background-repeat: no-repeat;
   background-position: center;
   border-color: #000000;
 }
 
 .views__options-one {
-  background-image: url(../images/catalog/view-mode/slideshow.svg);
+  background-image: url("../images/catalog/view-mode/slideshow.svg");
   background-repeat: no-repeat;
   background-position: center;
   border: 2px solid #d6d5d5;
 }
 
 .views__options-list {
-  background-image: url(../images/catalog/view-mode/list.svg);
+  background-image: url("../images/catalog/view-mode/list.svg");
   background-repeat: no-repeat;
   background-position: center;
   border: 2px solid #d6d5d5;
@@ -1503,7 +1503,7 @@ html {
 }
 
 .hotel__item-button {
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family:  "PT Sans", "Arial", sans-serif;
   padding: 8px 0;
   font-size: 16px;
   font-weight: 700;
@@ -1580,7 +1580,7 @@ html {
   min-width: 18px;
   min-height: 18px;
   background-color: #ffffff;
-  background-image: url(../images/catalog/hotels/star.svg);
+  background-image: url("../images/catalog/hotels/star.svg");
   background-position: left;
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
@@ -1722,7 +1722,7 @@ html {
   background-color: #f2f2f2;
   border: none;
   border-radius: 50%;
-  background-image: url(../images/cross.svg);
+  background-image: url("../images/cross.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
@@ -1779,7 +1779,7 @@ html {
   font-size: 18px;
   line-height: 24px;
   padding: 12px 50px 12px 20px;
-  background-image: url(../images/calendar.svg);
+  background-image: url("../images/calendar.svg");
   background-repeat: no-repeat;
   background-position: 97% center;
   cursor: pointer;
