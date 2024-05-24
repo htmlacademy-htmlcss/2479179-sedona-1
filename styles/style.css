@@ -285,6 +285,7 @@ html {
 
 .advantages__item {
   min-height: 385px;
+  max-width: calc(100%/3);
 }
 
 .advantages__title {
@@ -301,7 +302,7 @@ html {
 }
 
 .advantages__item:nth-child(2n+1) {
-  background-color: rgba(131, 179, 211, 0.2)
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 
@@ -311,6 +312,8 @@ html {
   display: -ms-flexbox;
   display: flex;
   color: #ffffff;
+  max-width: 100%;
+
 }
 
 .advantages__item:last-child {
@@ -319,6 +322,8 @@ html {
   display: -ms-flexbox;
   display: flex;
   color: #ffffff;
+  max-width: 100%;
+
 }
 
 
@@ -335,6 +340,7 @@ html {
   -ms-flex-pack: center;
   justify-content: center;
   padding: 60px;
+  word-break: break-all;
 }
 
 .advantages__subtitle {
@@ -401,6 +407,7 @@ html {
   background-repeat: no-repeat;
   background-position: center 80px;
   flex-basis: calc(100%/3);
+  word-break: break-all;
 }
 
 .benefits__item:first-child {
@@ -628,7 +635,6 @@ html {
 
 .subscription__button:disabled {
   background-color: #e5e5e5;
-  opacity: 60%;
 }
 
 ::-webkit-input-placeholder {
@@ -1308,14 +1314,14 @@ html {
   background-repeat: no-repeat;
   background-position: right 20px center;
   border-radius: 4px;
-  border-width: 2px;
-  border-color: #e5e5e5;
+  border: 2px solid #e5e5e5;
   font-size: 18px;
   line-height: 21px;
   -moz-appearance: none;
   appearance: none;
   cursor: pointer;
   width: 292px;
+  background-color: white;
 }
 
 .select__control:hover,
@@ -1691,7 +1697,7 @@ html {
 .modal {
   position: relative;
   background-color: #ffffff;
-  border-radius: 40px;
+  border-radius: 30px;
   margin: auto;
   padding: 64px 70px;
   min-height: 576px;
@@ -1760,11 +1766,11 @@ html {
 }
 
 .label__check-inn {
-  margin-right: 20px;
+  margin-right: 18px;
 }
 
 .label__check-out {
-  margin-right: 15px;
+  margin-right: 13px;
 }
 
 .modal-form-field {
@@ -1781,7 +1787,7 @@ html {
   padding: 12px 50px 12px 20px;
   background-image: url("../images/calendar.svg");
   background-repeat: no-repeat;
-  background-position: 97% center;
+  background-position: 95% center;
   cursor: pointer;
 }
 
@@ -1881,7 +1887,7 @@ html {
 
 .tooltip {
   position: relative;
-  margin-left: 46px;
+  margin-left: 38px;
   top: 3px;
 }
 
@@ -1894,7 +1900,7 @@ html {
   cursor: pointer;
   position: absolute;
   top: -3px;
-  left: -18px;
+  left: -27px;
 }
 
 .tooltip-info:hover {
@@ -1918,8 +1924,9 @@ html {
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   z-index: 1;
-  margin-top: 15px;
   display: none;
+  margin-top: 34px;
+  left: -14px;
 }
 
 .tooltip__text::after {
